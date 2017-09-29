@@ -128,17 +128,47 @@ footer {
   margin-bottom: 0px;
   border: 0 none;
 }
-
-/* Since the Stack Overflow image is a "tad" bigger than the other two social images, this class is used to adjust its display */
-.social-image2 {
-  width: 50px;
-  height: 54px;
-  margin-bottom: 3px;
-  border: 0 none;
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+/* Portfolio Page Classes */
+.portfolio-item {
+  position: relative;
+  float: left;
+  width: 275px;
+  margin: 20px 0 25px;
+  overflow: auto;
 }
 
+.portfolio-item:nth-child(odd) {
+  /* "nth" child of the enclosing container. The Banner (e.g. "<h2>Portfolio</h2>") is child #1, so the first
+      .portfolio-item on the page is child #2. This nth-child(odd) will mean that the 2nd .portfolio-item (which is the
+      3rd child of the container) will get the left margin, and so on. */ 
+  margin-left: 35px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.portfolio-item h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #ffffff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+
 /*---------------------------------------------------------------------*/
-/*-----------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
 /* Formatting of IDs */
 
 /* IDs for specific units of formatting */
